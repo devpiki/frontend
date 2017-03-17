@@ -1,4 +1,4 @@
-# frontend
+## A horizontal scrolling navigation pattern for touch and mouse with moving current indicator
 
 url : https://benfrain.com/a-horizontal-scrolling-navigation-pattern-for-touch-and-mouse-with-moving-current-indicator/?utm_source=frontendfocus&utm_medium=email
 
