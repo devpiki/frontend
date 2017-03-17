@@ -1,0 +1,19 @@
+<link rel="import"  href="polymer-20-test/bower_components/polymer/polymer-element.html">
+<dom-module id="declare-a-property">
+    <template>
+        <!-- bind to the "owner" property -->
+        This is <b>[[owner]]</b>'s name-tag element.
+    </template>
+
+    <script>
+        class ConfigurableNameTag extends Polymer.Element {
+        	static get is() {return "declare-a-property"}
+        	constructor(){
+        		super();
+        		this.owner = "Danel";
+            }
+        }
+        customElements.define(ConfigurableNameTag.is, ConfigurableNameTag);
+    </script>
+
+</dom-module>

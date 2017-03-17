@@ -1,0 +1,13 @@
+<link rel="import"  href="polymer-20-test/bower_components/polymer/polymer-element.html">
+
+<dom-module id="add-shadow-dom">
+    <template>
+        <p>I'm a DOM element. This is my local DOM!</p>
+    </template>
+    <script>
+        class DomElement extends Polymer.Element {
+        	static get is() {return "add-shadow-dom";}
+        }
+        customElements.define(DomElement.is, DomElement);
+    </script>
+</dom-module>

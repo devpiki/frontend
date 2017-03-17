@@ -1,0 +1,25 @@
+<link rel="import"  href="polymer-20-test/bower_components/polymer/polymer-element.html">
+
+<dom-module id="compose-with-shadow-dom">
+    <template>
+        <!-- scoped CSS for this element -->
+        <style>
+            div {
+                display: inline-block;
+                background-color: #ccc;
+                border-radius: 8px;
+                padding: 4px;
+            }
+        </style>
+        <div>
+            <!-- any children are rendered here -->
+            <slot></slot>
+        </div>
+    </template>
+    <script>
+        class PictureFrame extends Polymer.Element {
+        	static get is() {return "compose-with-shadow-dom";}
+        }
+        customElements.define(PictureFrame.is, PictureFrame)
+    </script>
+</dom-module>
