@@ -169,7 +169,7 @@ pnProductNavContents.addEventListener("click", function (e) {
 		if((SETTINGS.wheelCount%25) == 0){
 			SETTINGS.wheelCount == 0
 		}
-	}, false);
+	}, { passive: true } );
 });
 
 
